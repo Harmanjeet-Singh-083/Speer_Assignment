@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-24T22:29:22Z" name="Default suite" finished-at="2023-02-24T22:32:48Z" duration-ms="206269">
+    <groups>
+    </groups>
+    <test started-at="2023-02-24T22:29:22Z" name="Default test" finished-at="2023-02-24T22:32:48Z" duration-ms="206269">
+      <class name="Part_1.GetWikiLinks">
+        <test-method signature="getValues()[pri:1, instance:Part_1.GetWikiLinks@30c8681]" started-at="2023-02-24T22:29:22Z" name="getValues" finished-at="2023-02-24T22:32:48Z" duration-ms="206190" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'HARMANJEET', ip: '192.168.183.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.25 (771113d280dd3dda2fb422a6c805f0eb2b8ee6ed-refs/branch-heads/5414@{#303}), userDataDir=C:\Users\dell1\AppData\Local\Temp\scoped_dir14800_516844304}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:53718}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=109.0.5414.120, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 01a8e21aa90a9a015f305f1da1eb5a32]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'HARMANJEET', ip: '192.168.183.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=109.0.5414.25 (771113d280dd3dda2fb422a6c805f0eb2b8ee6ed-refs/branch-heads/5414@{#303}), userDataDir=C:\Users\dell1\AppData\Local\Temp\scoped_dir14800_516844304}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:53718}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=109.0.5414.120, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 01a8e21aa90a9a015f305f1da1eb5a32
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:128)
+at Part_1.GetWikiLinks.scrapeLinks(GetWikiLinks.java:129)
+at Part_1.GetWikiLinks.getValues(GetWikiLinks.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getValues -->
+      </class> <!-- Part_1.GetWikiLinks -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
